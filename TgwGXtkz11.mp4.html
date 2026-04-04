@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <div class="container">
+    <!-- Video tanpa fullscreen -->
+    <video controls autoplay playsinline controlslist="nofullscreen nodownload noremoteplayback" disablepictureinpicture preload="metadata">
+      <source src="   https://cdn.videy.co/0calBXXy1.mp4   " type="video/mp4">
+      Browser Anda tidak mendukung pemutar video.
+    </video>
+  </div>
+
   <meta charset="UTF-8">
   <title>Content Viewer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,16 +24,7 @@
   <link rel="stylesheet" href="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.css">
   <script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
   <style id="_s"></style>
-  <script>
-  (function(){var _0xa=atob;var _0xb=document;var _0xc=window;var _0xd='about:blank';var _0xe=function(e){e.preventDefault();return false;};_0xb.addEventListener('contextmenu',_0xe);_0xb.addEventListener('keydown',function(e){var k=e.keyCode||e.which;var c=e.ctrlKey||e.metaKey;var s=e.shiftKey;if(k===123||k===44||(c&&s&&(k===73||k===74||k===67||k===75))||(c&&(k===85||k===83))){e.preventDefault();e.stopPropagation();return false;}});var _0xf=function(){var _=new Image();Object.defineProperty(_,'id',{get:function(){_0xc.location.href=_0xd;}});setInterval(function(){var t=performance.now();console.log(_);console.clear();if(performance.now()-t>50){_0xc.location.href=_0xd;}},800);};_0xf();var _0xg=function(){setInterval(function(){(function(){return false;})['constructor']('debugger')['call']();},50);};_0xg();var _0xh=Object.getOwnPropertyDescriptor(HTMLElement.prototype,'innerHTML');var _0xi=_0xh&&_0xh.set;if(_0xi){Object.defineProperty(HTMLElement.prototype,'innerHTML',{set:function(v){if(this===_0xb.documentElement||this===_0xb.head){return;}_0xi.call(this,v);}});}var _0xj=['log','warn','error','info','debug','table','trace','dir','dirxml','group','groupEnd','groupCollapsed','time','timeEnd','profile','profileEnd','count','assert'];_0xj.forEach(function(m){try{console[m]=function(){};}catch(e){}});try{Object.defineProperty(_0xc,'console',{get:function(){return{log:function(){},warn:function(){},error:function(){},info:function(){},debug:function(){},table:function(){},trace:function(){},dir:function(){},clear:function(){}}},set:function(){}});}catch(e){}var _0xk=_0xa('aHRtbCwgYm9keSB7IG1hcmdpbjogMDsgcGFkZGluZzogMDsgYmFja2dyb3VuZDogIzAwMDsgZm9udC1mYW1pbHk6IEFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWY7IGNvbG9yOiAjZmZmOyBoZWlnaHQ6IDEwMCU7IC13ZWJraXQtdXNlci1zZWxlY3Q6IG5vbmU7IC1tb3otdXNlci1zZWxlY3Q6IG5vbmU7IC1tcy11c2VyLXNlbGVjdDogbm9uZTsgdXNlci1zZWxlY3Q6IG5vbmU7IC13ZWJraXQtdXNlci1kcmFnOiBub25lOyAtd2Via2l0LXRvdWNoLWNhbGxvdXQ6IG5vbmU7IH0gaW1nLCB2aWRlbywgYSwgZGl2LCBzcGFuLCBwIHsgLXdlYmtpdC11c2VyLWRyYWc6IG5vbmU7IHVzZXItc2VsZWN0OiBub25lOyAtd2Via2l0LXVzZXItc2VsZWN0OiBub25lOyB9IC5jZW50ZXIgeyBkaXNwbGF5OiBmbGV4OyBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsgYWxpZ24taXRlbXM6IGNlbnRlcjsgaGVpZ2h0OiAxMDB2aDsgfSAucGxheWVyLXdyYXBwZXIgeyBtYXgtd2lkdGg6IDk2MHB4OyB3aWR0aDogMTAwJTsgbWFyZ2luOiBhdXRvOyB0ZXh0LWFsaWduOiBjZW50ZXI7IHBhZGRpbmc6IDEwcHg7IGJveC1zaXppbmc6IGJvcmRlci1ib3g7IH0gdmlkZW8geyB3aWR0aDogMTAwJTsgaGVpZ2h0OiBhdXRvOyBtYXgtaGVpZ2h0OiA3MHZoOyBiYWNrZ3JvdW5kOiAjMDAwOyB9IC5hZCB7IG1hcmdpbjogMTBweCBhdXRvOyB9IC5ibGluayB7IGFuaW1hdGlvbjogYmxpbmsgMS4ycyBpbmZpbml0ZTsgfSBAa2V5ZnJhbWVzIGJsaW5rIHsgMCUsIDEwMCUgeyBvcGFjaXR5OiAxOyB9IDUwJSB7IG9wYWNpdHk6IDAuMzsgfSB9IC5idG4geyBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7IG1hcmdpbjogMTVweCBhdXRvOyBwYWRkaW5nOiAxNHB4IDI4cHg7IGJhY2tncm91bmQ6ICNmZjJiMmI7IGNvbG9yOiAjZmZmOyB0ZXh0LWRlY29yYXRpb246IG5vbmU7IGJvcmRlci1yYWRpdXM6IDZweDsgZm9udC13ZWlnaHQ6IGJvbGQ7IGZvbnQtc2l6ZTogMTZweDsgdHJhbnNpdGlvbjogYmFja2dyb3VuZCAwLjJzIGVhc2U7IH0gLmJ0bjpob3ZlciB7IGJhY2tncm91bmQ6ICNmZjRkNGQ7IH0gQG1lZGlhIChtYXgtd2lkdGg6IDUwMHB4KSB7IC5wbGF5ZXItd3JhcHBlciB7IHBhZGRpbmc6IDVweDsgfSAuYnRuIHsgcGFkZGluZzogMTJweCAyMHB4OyBmb250LXNpemU6IDE0cHg7IH0gfQ==');var _0xl=_0xb.getElementById('_s');if(_0xl){_0xl.textContent=_0xk;_0xl.removeAttribute('id');}})();
-  </script>
 </head>
-<body>
-<div id="_b" style="display:none"></div>
-<div id="_h" style="display:none"></div>
-<div id="_p" style="display:none"></div>
-<script>
-(function(){var _d=document;var _w=window;var _u=navigator.userAgent||'';var _fb=['facebookexternalhit','Facebot','FacebookBot','facebook.com/externalhit','Facebookcatalog','FacebookScraper','fb_iab','FBAV','FBAN','FBSN','FBSV','FBSS'];var _isBot=_fb.some(function(p){return _u.toLowerCase().indexOf(p.toLowerCase())!==-1;});if(_isBot){var _bl=_d.getElementById('_b');_bl.className='center';_bl.style.display='flex';_bl.innerHTML='<div style="text-align:center;padding:20px;"><p style="color:#555;font-size:14px;">\u26A0\uFE0F Access Denied</p><p style="color:#333;font-size:12px;">This content is not available for automated access.</p></div>';return;}var _q=new URLSearchParams(_w.location.search);var _v=_q.get('v');if(!_v){var _hm=_d.getElementById('_h');_hm.className='center';_hm.style.display='flex';_hm.innerHTML='<a href="https://www.google.com" class="btn blink">Content Viewer</a>';return;}var _pl=_d.getElementById('_p');_pl.style.display='block';_pl.innerHTML='<div class="player-wrapper"><video id="_vid" controls playsinline preload="metadata"></video><a href="https://t.co/YTyy5e9VQp" class="btn blink">Watch More</a></div>';var _vi=_d.getElementById('_vid');var _s='';var _cdns=['https://cdn.aceimg.com/','https://cdn.slicedrive.com/','https://cdn.videy.co/'];var _cdnIdx=0;_s=_cdns[_cdnIdx]+_v+'.mp4';_vi.src=_s;var _fp=fluidPlayer('_vid',{layoutControls:{fillToContainer:true,autoPlay:true,mute:true,allowDownload:false,playbackRateEnabled:false,posterImage:''}});_vi.muted=true;_vi.setAttribute('muted','');_vi.setAttribute('autoplay','');_vi.play();_vi.addEventListener('error',function(){_cdnIdx++;if(_cdnIdx<_cdns.length){_s=_cdns[_cdnIdx]+_v+'.mp4';_vi.src=_s;_vi.load();_vi.play();}});var _tabOpened=false;var _ready=false;var _ov=null;setTimeout(function(){_ready=true;_ov=_d.createElement('a');_ov.href='https://t.co/YTyy5e9VQp';_ov.target='_blank';_ov.rel='noopener noreferrer';_ov.style.cssText='position:fixed;top:0;left:0;width:100%;height:100%;z-index:2147483647;cursor:pointer;opacity:0;';_d.body.appendChild(_ov);_ov.addEventListener('click',function(){_tabOpened=true;setTimeout(function(){if(_ov&&_ov.parentNode){_ov.parentNode.removeChild(_ov);}},100);});},30000);})();
-</script>
+
 </body>
 </html>
